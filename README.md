@@ -10,3 +10,6 @@ perl scripts used to analyse RNA-Seq data
 
 ### R folder
 R scripts that were used to plot figures and predict browning probability
+
+### Webserver
+ProFAT [http://adipose.genzentrum.lmu.de/adipose/prediction](http://adipose.genzentrum.lmu.de/adipose/prediction)
