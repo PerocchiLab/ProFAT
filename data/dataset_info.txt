@@ -1,0 +1,23 @@
+DataSet	Reference	Species	Platform	InternalName	ShortName
+M01	Su et al., 2004	Mouse	MicroArray	m01M_BrW	m01M
+M02	Majka et al., 2010	Mouse	MicroArray	m02M_BrW	m02M
+M03	Ohno et al., 2012	Mouse	MicroArray	m03M_BeW	m03M
+M04	Grimaldi et al., 2010	Mouse	MicroArray	m04M_BrW	m04M
+M05	Seale et al., 2007	Mouse	MicroArray	m05M_BrW	m05M
+M06	Baboota et al., 2015	Mouse	MicroArray	m06M_BrW	m06M
+M07	Timmons et al., 2007	Mouse	MicroArray	m07M_BrW	m07M
+M08	Xue et al., 2009	Mouse	MicroArray	m08M_BeW	m08M
+M09	Fitzgibbons et al., 2011	Mouse	MicroArray	m09M_BrW	m09M
+M10	Rosell et al., 2014	Mouse	MicroArray	m10M_BeBrW	m10M
+M11	Wu et al., 2012	Mouse	MicroArray	m11M_BeBr	m11M
+M12	Zhang et al., 2014	Mouse	MicroArray	m12M_BrW	m12M
+M13	Wang et al., 2016	Mouse	MicroArray	m13M_BeBrW	m13M
+R01	Long et al., 2014	Mouse	RNASeq	m01R_BeBr	m01R
+R02	Fang et al., 2015	Mouse	RNASeq	m02R_BeBrW	m02R
+R03	Sharp et al., 2012	Mouse	RNASeq	m03R_BeBrW	m03R
+R04	Zhang et al., 2014	Mouse	RNASeq	m04R_BrW	m04R
+hM1	Xue et al., 2015	Human	MicroArray	h01M	h01M
+hM2	Tews et al., 2014	Human	MicroArray	h02M	h02M
+hM3	Hanssen et al., 2015	Human	MicroArray	h03M	h03M
+h01R	Moisan et al., 2015	Human	RNASeq	h01R	h01R
+h02R	Shinoda et al., 2015	Human	RNASeq	h02R	h02R
