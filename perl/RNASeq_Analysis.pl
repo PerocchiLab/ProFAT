@@ -1,8 +1,13 @@
 #!/usr/bin/perl -w
 use strict;
 use Parallel::ForkManager;
+# 
 # Purpose: 
-# This function is to run the RNASeq analysis in one script 
+# This function is to run the RNASeq analysis in one script based on the samples.txt.
+# This script is ONLY a reference script. To use it for productive, you could contact the ProFAT team 
+# for more information. 
+# The samples.txt provides all the necessary information of the RNASeq data and the reference genome.
+
 ############################################
 # Initialize the data ...
 ############################################
@@ -81,10 +86,10 @@ my $data_type="";
 if ($accession=~/^S/){
 	my $acc_3=$accession;
 	$acc_3=~s/\d\d\d$//;
-	$fastq_dir=$base_dir."DataInfo/ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/$acc_3/$accession/";
+	$fastq_dir=$base_dir."$acc_3/$accession/";
 	$data_type="NCBI";
 } elsif ($accession=~/^E/){
-	$fastq_dir=$base_dir."DataInfo/ftp.sra.ebi.ac.uk/vol1/fastq/$accession/";
+	$fastq_dir=$base_dir."$accession/";
 	$data_type="EBI";
 }
 
@@ -119,8 +124,8 @@ if (file_es($f_index)){
 ############################################
 print "FastqQC Check ...\n";
 
-my $pm=new Parallel::ForkManager(10);
 my $num_proc = 16;
+my $pm=new Parallel::ForkManager($num_proc);
 
 for (my $ii=0;$ii<=$#samples;$ii++){
 	my $sample_i = $samples[$ii];
@@ -160,7 +165,7 @@ for (my $ii=0;$ii<=$#samples;$ii++){
 			}
 		}
 	} elsif ($ftc eq "tg"){
-		my $tg_program = "/data/home/share/Tools/Trim_Galore/trim_galore";
+		my $tg_program = "Tools/Trim_Galore/trim_galore";
 		my $run_trim_galore="";
 		my $temp_fq_file = join(" ", @fastq_files);
 		if ($pair_end==1){
