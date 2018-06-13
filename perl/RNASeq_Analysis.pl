@@ -2,13 +2,7 @@
 use strict;
 use Parallel::ForkManager;
 # Purpose: 
-# This function is to run the RNASeq analysis based on the defintion files, such as fq.txt and tg.txt
-#
-# Author: Yiming Cheng
-# Created: 2015/08/11
-# Modified: 2015/11/06 to handle more systamatically. 
-# Modified: 2015/11/11 to process the sample data and save it on the source directory
-# Modified: 2017/01/26 to simplify the process
+# This function is to run the RNASeq analysis in one script 
 ############################################
 # Initialize the data ...
 ############################################
