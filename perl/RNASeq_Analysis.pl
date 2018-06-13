@@ -1,12 +1,11 @@
 #!/usr/bin/perl -w
 use strict;
-use Parallel::ForkManager;
-# 
-# Purpose: 
-# This function is to run the RNASeq analysis in one script based on the samples.txt.
-# This script is ONLY a reference script. To use it for productive, you could contact the ProFAT team 
-# for more information. 
-# The samples.txt provides all the necessary information of the RNASeq data and the reference genome.
+use Parallel::ForkManager; 
+# REMARKS: 
+# This script is used to analyze all the RNASeq data in the paper (cheng et al, Cell Report 23, 3112-3125). 
+# To use it for productive, you could contact the ProFAT team for more information to set up the right 
+# path and configuration. 
+# The samples.txt is a configuration file with all the necessary information of the RNASeq data and the reference genome.
 
 ############################################
 # Initialize the data ...
