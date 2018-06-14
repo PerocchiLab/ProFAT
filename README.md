@@ -1,5 +1,5 @@
 ## ProFAT
-This is the repository of code and processed data supporting the publication "Prediction of Adipose Browning Capacity by Systematic Integration of Transcriptional Profiles" [Cheng et al.] 
+This is the repository of code and processed data supporting the publication "Prediction of Adipose Browning Capacity by Systematic Integration of Transcriptional Profiles" [Cheng et al. Cell Rep. 2018 Jun 5;23(10):3112-3125] 
 (https://www.ncbi.nlm.nih.gov/pubmed/29874595).
 
 ### code
